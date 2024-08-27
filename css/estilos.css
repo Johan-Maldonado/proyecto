@@ -1,0 +1,96 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la pantalla */
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f2f2f2;
+    color: #444;
+    border-bottom: none; /* Eliminar la línea debajo del header */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Aumentar el espacio entre los cuadros de texto */
+    max-width: 1800px; /* Ampliar el ancho máximo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    width: 100%;
+    flex: 1;
+    margin-top: 25vh; /* Ajustar el margen superior para centrar verticalmente el main */
+    position: relative; /* Posicionamiento relativo para ajustar el desplazamiento */
+    left: 40%; /* Mover el main hacia la derecha */
+    transform: translateX(-50%); /* Ajustar el desplazamiento para centrar el contenido */
+}
+
+.input-section, .output-section {
+    flex: 1;
+}
+
+textarea {
+    width: 80%; /* Hacer los cuadros de texto menos anchos */
+    height: 400px; /* Hacer los cuadros de texto más altos */
+    padding: 10px;
+    margin-bottom: 20px; /* Aumentar el espacio entre los cuadros de texto y el aviso/botones */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+.aviso {
+    color: #ff4444; /* Un rojo ligeramente más suave */
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.botones {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.botones button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #4A90E2; /* Azul suave */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.botones button:hover {
+    background-color: #357ABD; /* Azul más oscuro en hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f2f2f2;
+    color: #444;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    color: #777;
+    margin-top: auto; /* Empuja el footer al final de la página */
+}

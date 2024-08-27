@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Encriptador de Texto</h1>
+    </header>
+
+    <main>
+        <!-- Columna izquierda: Input y mensaje -->
+        <section class="input-section">
+            <p>Introduce el texto que deseas encriptar o desencriptar:</p>
+            <textarea id="inputTexto" placeholder="Escribe aquí..." rows="5"></textarea>
+            <p class="aviso">* No se aceptan mayúsculas ni caracteres especiales.</p>
+            <div class="botones">
+                <button id="btnEncriptar">Encriptar</button>
+                <button id="btnDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <!-- Columna derecha: Output -->
+        <section class="output-section">
+            <p>Texto encriptado/desencriptado:</p>
+            <textarea id="outputTexto" placeholder="El resultado aparecerá aquí..." rows="5" readonly></textarea>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Maldonado Johan. Vamos por más</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
